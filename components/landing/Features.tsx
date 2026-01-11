@@ -17,7 +17,6 @@ const features = [
         />
       </svg>
     ),
-    color: 'bg-blue-100 text-blue-600 dark:bg-blue-900/30 dark:text-blue-400',
   },
   {
     title: 'Smart Categorization',
@@ -33,7 +32,6 @@ const features = [
         />
       </svg>
     ),
-    color: 'bg-purple-100 text-purple-600 dark:bg-purple-900/30 dark:text-purple-400',
   },
   {
     title: 'Productivity Insights',
@@ -49,7 +47,6 @@ const features = [
         />
       </svg>
     ),
-    color: 'bg-green-100 text-green-600 dark:bg-green-900/30 dark:text-green-400',
   },
   {
     title: 'Project Time Tracking',
@@ -65,7 +62,6 @@ const features = [
         />
       </svg>
     ),
-    color: 'bg-amber-100 text-amber-600 dark:bg-amber-900/30 dark:text-amber-400',
   },
   {
     title: 'Pomodoro Timer',
@@ -81,7 +77,6 @@ const features = [
         />
       </svg>
     ),
-    color: 'bg-red-100 text-red-600 dark:bg-red-900/30 dark:text-red-400',
   },
   {
     title: 'Flexible Reports',
@@ -97,7 +92,6 @@ const features = [
         />
       </svg>
     ),
-    color: 'bg-cyan-100 text-cyan-600 dark:bg-cyan-900/30 dark:text-cyan-400',
   },
 ];
 
@@ -120,9 +114,7 @@ export function Features() {
               key={index}
               className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow"
             >
-              <div
-                className={`w-12 h-12 rounded-lg ${feature.color} flex items-center justify-center mb-4`}
-              >
+              <div className="w-12 h-12 rounded-lg bg-primary-500 text-white dark:bg-primary-600 flex items-center justify-center mb-4">
                 {feature.icon}
               </div>
               <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
