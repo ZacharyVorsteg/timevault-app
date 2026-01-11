@@ -85,7 +85,7 @@ export function ManualTimer() {
           <button
             className={`px-3 py-1 rounded-lg text-sm font-medium transition-colors ${
               mode === 'manual'
-                ? 'bg-primary-100 dark:bg-primary-900/30 text-primary-700 dark:text-primary-400'
+                ? 'bg-primary-600 text-white'
                 : 'text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700'
             }`}
             onClick={() => setMode('manual')}
@@ -95,7 +95,7 @@ export function ManualTimer() {
           <button
             className={`px-3 py-1 rounded-lg text-sm font-medium transition-colors ${
               mode === 'pomodoro'
-                ? 'bg-primary-100 dark:bg-primary-900/30 text-primary-700 dark:text-primary-400'
+                ? 'bg-primary-600 text-white'
                 : 'text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700'
             }`}
             onClick={() => setMode('pomodoro')}
