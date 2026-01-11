@@ -37,14 +37,8 @@ export default function UpgradeSuccessPage() {
           setStatus('error');
         }
       } catch (error) {
-        // For demo purposes, activate anyway
-        const key = generateLicenseKey();
-        await setLicense({
-          tier: 'pro',
-          purchasedAt: new Date(),
-        });
-        setLicenseKey(key);
-        setStatus('success');
+        // Verification failed - show error state
+        setStatus('error');
       }
     };
 
